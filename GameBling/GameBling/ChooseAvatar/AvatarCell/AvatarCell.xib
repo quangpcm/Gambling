@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AvatarCell" customModule="GameBling" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="260" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rmf-EK-2IP">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="201"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="01N-8p-lUZ">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="181"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4o-bB-4RY">
+                                <rect key="frame" x="130" y="201" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="01N-8p-lUZ" firstAttribute="top" secondItem="Rmf-EK-2IP" secondAttribute="top" id="Bme-UA-ILC"/>
+                            <constraint firstItem="g4o-bB-4RY" firstAttribute="top" secondItem="01N-8p-lUZ" secondAttribute="bottom" constant="20" id="D29-1P-ETR"/>
+                            <constraint firstAttribute="trailing" secondItem="01N-8p-lUZ" secondAttribute="trailing" id="P2d-Aa-Nd0"/>
+                            <constraint firstAttribute="bottom" secondItem="g4o-bB-4RY" secondAttribute="bottom" id="SaK-2I-Rcq"/>
+                            <constraint firstItem="01N-8p-lUZ" firstAttribute="leading" secondItem="Rmf-EK-2IP" secondAttribute="leading" id="TEW-QX-9wi"/>
+                            <constraint firstItem="g4o-bB-4RY" firstAttribute="centerX" secondItem="Rmf-EK-2IP" secondAttribute="centerX" id="hOi-78-jL8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Rmf-EK-2IP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Rxd-pu-Eod"/>
+                <constraint firstAttribute="trailing" secondItem="Rmf-EK-2IP" secondAttribute="trailing" id="Tje-oT-OB7"/>
+                <constraint firstItem="Rmf-EK-2IP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="X7h-lG-C7S"/>
+                <constraint firstItem="Rmf-EK-2IP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="c8d-PD-wpv"/>
+                <constraint firstAttribute="trailing" secondItem="Rmf-EK-2IP" secondAttribute="trailing" id="d3B-f3-FOQ"/>
+                <constraint firstAttribute="bottom" secondItem="Rmf-EK-2IP" secondAttribute="bottom" id="kP6-Ml-o9G"/>
+                <constraint firstItem="Rmf-EK-2IP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lfS-mv-xLa"/>
+                <constraint firstAttribute="bottom" secondItem="Rmf-EK-2IP" secondAttribute="bottom" id="sQx-mz-In5"/>
+            </constraints>
+            <size key="customSize" width="260" height="201"/>
+            <connections>
+                <outlet property="avatarImageView" destination="01N-8p-lUZ" id="vPT-Zu-5JO"/>
+                <outlet property="containerView" destination="Rmf-EK-2IP" id="0x0-qa-hlS"/>
+                <outlet property="gender" destination="g4o-bB-4RY" id="Vn2-8D-uyT"/>
+            </connections>
+            <point key="canvasLocation" x="44.274809160305338" y="73.591549295774655"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

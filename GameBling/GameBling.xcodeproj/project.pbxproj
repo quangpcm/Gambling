@@ -10,8 +10,21 @@
 		BA5E21D52AAEB3D400BA194D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E21D42AAEB3D400BA194D /* AppDelegate.swift */; };
 		BA5E21DE2AAEB3D700BA194D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5E21DD2AAEB3D700BA194D /* Assets.xcassets */; };
 		BA5E21E12AAEB3D700BA194D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5E21DF2AAEB3D700BA194D /* LaunchScreen.storyboard */; };
-		BA5E21EB2AAEB40900BA194D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E21E92AAEB40900BA194D /* HomeViewController.swift */; };
-		BA5E21EC2AAEB40900BA194D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA5E21EA2AAEB40900BA194D /* HomeViewController.xib */; };
+		BA5E21EB2AAEB40900BA194D /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E21E92AAEB40900BA194D /* AddUserViewController.swift */; };
+		BA5E21EC2AAEB40900BA194D /* AddUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA5E21EA2AAEB40900BA194D /* AddUserViewController.xib */; };
+		BA5E21F52AAED11000BA194D /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E21F32AAED11000BA194D /* CreateUserViewController.swift */; };
+		BA5E21F62AAED11000BA194D /* CreateUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA5E21F42AAED11000BA194D /* CreateUserViewController.xib */; };
+		BA5E21FA2AAEF19B00BA194D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E21F82AAEF19A00BA194D /* UserCell.swift */; };
+		BA5E21FB2AAEF19B00BA194D /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA5E21F92AAEF19A00BA194D /* UserCell.xib */; };
+		BA5E21FD2AAEF58200BA194D /* AddUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E21FC2AAEF58200BA194D /* AddUserViewModel.swift */; };
+		BA5E21FF2AAEF7CA00BA194D /* CreateUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E21FE2AAEF7C900BA194D /* CreateUserViewModel.swift */; };
+		BA5E22032AAF047800BA194D /* ChooseAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E22012AAF047800BA194D /* ChooseAvatarViewController.swift */; };
+		BA5E22042AAF047800BA194D /* ChooseAvatarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA5E22022AAF047800BA194D /* ChooseAvatarViewController.xib */; };
+		BA5E22062AAF05C400BA194D /* ChooseAvatarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E22052AAF05C400BA194D /* ChooseAvatarViewModel.swift */; };
+		BA5E220E2AAF07D200BA194D /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E220C2AAF07D200BA194D /* AvatarCell.swift */; };
+		BA5E220F2AAF07D200BA194D /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA5E220D2AAF07D200BA194D /* AvatarCell.xib */; };
+		BA5E22112AAF07F900BA194D /* AvatarCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E22102AAF07F900BA194D /* AvatarCellViewModel.swift */; };
+		BA5E221B2AAF74F900BA194D /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E221A2AAF74F900BA194D /* UserCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +33,21 @@
 		BA5E21DD2AAEB3D700BA194D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA5E21E02AAEB3D700BA194D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA5E21E22AAEB3D700BA194D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA5E21E92AAEB40900BA194D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		BA5E21EA2AAEB40900BA194D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		BA5E21E92AAEB40900BA194D /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		BA5E21EA2AAEB40900BA194D /* AddUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddUserViewController.xib; sourceTree = "<group>"; };
+		BA5E21F32AAED11000BA194D /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		BA5E21F42AAED11000BA194D /* CreateUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateUserViewController.xib; sourceTree = "<group>"; };
+		BA5E21F82AAEF19A00BA194D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		BA5E21F92AAEF19A00BA194D /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		BA5E21FC2AAEF58200BA194D /* AddUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewModel.swift; sourceTree = "<group>"; };
+		BA5E21FE2AAEF7C900BA194D /* CreateUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewModel.swift; sourceTree = "<group>"; };
+		BA5E22012AAF047800BA194D /* ChooseAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAvatarViewController.swift; sourceTree = "<group>"; };
+		BA5E22022AAF047800BA194D /* ChooseAvatarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseAvatarViewController.xib; sourceTree = "<group>"; };
+		BA5E22052AAF05C400BA194D /* ChooseAvatarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAvatarViewModel.swift; sourceTree = "<group>"; };
+		BA5E220C2AAF07D200BA194D /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		BA5E220D2AAF07D200BA194D /* AvatarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCell.xib; sourceTree = "<group>"; };
+		BA5E22102AAF07F900BA194D /* AvatarCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCellViewModel.swift; sourceTree = "<group>"; };
+		BA5E221A2AAF74F900BA194D /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +80,9 @@
 		BA5E21D32AAEB3D400BA194D /* GameBling */ = {
 			isa = PBXGroup;
 			children = (
-				BA5E21E82AAEB3FE00BA194D /* Home */,
+				BA5E22002AAF044600BA194D /* ChooseAvatar */,
+				BA5E21F22AAED0D900BA194D /* CreateUser */,
+				BA5E21E82AAEB3FE00BA194D /* AddUser */,
 				BA5E21D42AAEB3D400BA194D /* AppDelegate.swift */,
 				BA5E21DD2AAEB3D700BA194D /* Assets.xcassets */,
 				BA5E21DF2AAEB3D700BA194D /* LaunchScreen.storyboard */,
@@ -63,13 +91,56 @@
 			path = GameBling;
 			sourceTree = "<group>";
 		};
-		BA5E21E82AAEB3FE00BA194D /* Home */ = {
+		BA5E21E82AAEB3FE00BA194D /* AddUser */ = {
 			isa = PBXGroup;
 			children = (
-				BA5E21E92AAEB40900BA194D /* HomeViewController.swift */,
-				BA5E21EA2AAEB40900BA194D /* HomeViewController.xib */,
+				BA5E21F72AAEF17B00BA194D /* UserCell */,
+				BA5E21E92AAEB40900BA194D /* AddUserViewController.swift */,
+				BA5E21EA2AAEB40900BA194D /* AddUserViewController.xib */,
+				BA5E21FC2AAEF58200BA194D /* AddUserViewModel.swift */,
 			);
-			path = Home;
+			path = AddUser;
+			sourceTree = "<group>";
+		};
+		BA5E21F22AAED0D900BA194D /* CreateUser */ = {
+			isa = PBXGroup;
+			children = (
+				BA5E21F32AAED11000BA194D /* CreateUserViewController.swift */,
+				BA5E21F42AAED11000BA194D /* CreateUserViewController.xib */,
+				BA5E21FE2AAEF7C900BA194D /* CreateUserViewModel.swift */,
+			);
+			path = CreateUser;
+			sourceTree = "<group>";
+		};
+		BA5E21F72AAEF17B00BA194D /* UserCell */ = {
+			isa = PBXGroup;
+			children = (
+				BA5E21F82AAEF19A00BA194D /* UserCell.swift */,
+				BA5E21F92AAEF19A00BA194D /* UserCell.xib */,
+				BA5E221A2AAF74F900BA194D /* UserCellViewModel.swift */,
+			);
+			path = UserCell;
+			sourceTree = "<group>";
+		};
+		BA5E22002AAF044600BA194D /* ChooseAvatar */ = {
+			isa = PBXGroup;
+			children = (
+				BA5E220B2AAF073200BA194D /* AvatarCell */,
+				BA5E22012AAF047800BA194D /* ChooseAvatarViewController.swift */,
+				BA5E22022AAF047800BA194D /* ChooseAvatarViewController.xib */,
+				BA5E22052AAF05C400BA194D /* ChooseAvatarViewModel.swift */,
+			);
+			path = ChooseAvatar;
+			sourceTree = "<group>";
+		};
+		BA5E220B2AAF073200BA194D /* AvatarCell */ = {
+			isa = PBXGroup;
+			children = (
+				BA5E220C2AAF07D200BA194D /* AvatarCell.swift */,
+				BA5E220D2AAF07D200BA194D /* AvatarCell.xib */,
+				BA5E22102AAF07F900BA194D /* AvatarCellViewModel.swift */,
+			);
+			path = AvatarCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +201,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5E220F2AAF07D200BA194D /* AvatarCell.xib in Resources */,
 				BA5E21E12AAEB3D700BA194D /* LaunchScreen.storyboard in Resources */,
 				BA5E21DE2AAEB3D700BA194D /* Assets.xcassets in Resources */,
-				BA5E21EC2AAEB40900BA194D /* HomeViewController.xib in Resources */,
+				BA5E21EC2AAEB40900BA194D /* AddUserViewController.xib in Resources */,
+				BA5E22042AAF047800BA194D /* ChooseAvatarViewController.xib in Resources */,
+				BA5E21F62AAED11000BA194D /* CreateUserViewController.xib in Resources */,
+				BA5E21FB2AAEF19B00BA194D /* UserCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,8 +218,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5E21FA2AAEF19B00BA194D /* UserCell.swift in Sources */,
+				BA5E220E2AAF07D200BA194D /* AvatarCell.swift in Sources */,
+				BA5E22032AAF047800BA194D /* ChooseAvatarViewController.swift in Sources */,
+				BA5E22062AAF05C400BA194D /* ChooseAvatarViewModel.swift in Sources */,
 				BA5E21D52AAEB3D400BA194D /* AppDelegate.swift in Sources */,
-				BA5E21EB2AAEB40900BA194D /* HomeViewController.swift in Sources */,
+				BA5E221B2AAF74F900BA194D /* UserCellViewModel.swift in Sources */,
+				BA5E21EB2AAEB40900BA194D /* AddUserViewController.swift in Sources */,
+				BA5E21FD2AAEF58200BA194D /* AddUserViewModel.swift in Sources */,
+				BA5E21F52AAED11000BA194D /* CreateUserViewController.swift in Sources */,
+				BA5E21FF2AAEF7CA00BA194D /* CreateUserViewModel.swift in Sources */,
+				BA5E22112AAF07F900BA194D /* AvatarCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
