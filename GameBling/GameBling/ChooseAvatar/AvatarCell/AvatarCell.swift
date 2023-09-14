@@ -9,10 +9,10 @@ import UIKit
 
 final class AvatarCell: UICollectionViewCell {
 
+    //MARK: PROPERTIES
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var avatarImageView: UIImageView!
-    @IBOutlet private weak var gender: UILabel!
-
+    
     var viewModel: AvatarCellViewModel? {
         didSet {
             updateUI()
@@ -29,7 +29,8 @@ final class AvatarCell: UICollectionViewCell {
           }
       }
 
-    func updateUI() {
+    private func updateUI() {
         avatarImageView.image = viewModel?.image
+        containerView.layer.cornerRadius = 12
     }
 }

@@ -21,23 +21,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="260" height="201"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="01N-8p-lUZ">
-                                <rect key="frame" x="0.0" y="0.0" width="260" height="181"/>
+                                <rect key="frame" x="10" y="10" width="240" height="181"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4o-bB-4RY">
-                                <rect key="frame" x="130" y="201" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="01N-8p-lUZ" firstAttribute="top" secondItem="Rmf-EK-2IP" secondAttribute="top" id="Bme-UA-ILC"/>
-                            <constraint firstItem="g4o-bB-4RY" firstAttribute="top" secondItem="01N-8p-lUZ" secondAttribute="bottom" constant="20" id="D29-1P-ETR"/>
-                            <constraint firstAttribute="trailing" secondItem="01N-8p-lUZ" secondAttribute="trailing" id="P2d-Aa-Nd0"/>
-                            <constraint firstAttribute="bottom" secondItem="g4o-bB-4RY" secondAttribute="bottom" id="SaK-2I-Rcq"/>
-                            <constraint firstItem="01N-8p-lUZ" firstAttribute="leading" secondItem="Rmf-EK-2IP" secondAttribute="leading" id="TEW-QX-9wi"/>
-                            <constraint firstItem="g4o-bB-4RY" firstAttribute="centerX" secondItem="Rmf-EK-2IP" secondAttribute="centerX" id="hOi-78-jL8"/>
+                            <constraint firstItem="01N-8p-lUZ" firstAttribute="top" secondItem="Rmf-EK-2IP" secondAttribute="top" constant="10" id="PuR-dc-H2k"/>
+                            <constraint firstAttribute="bottom" secondItem="01N-8p-lUZ" secondAttribute="bottom" constant="10" id="SUI-va-wCr"/>
+                            <constraint firstItem="01N-8p-lUZ" firstAttribute="leading" secondItem="Rmf-EK-2IP" secondAttribute="leading" constant="10" id="f8g-zJ-jDg"/>
+                            <constraint firstAttribute="trailing" secondItem="01N-8p-lUZ" secondAttribute="trailing" constant="10" id="ztN-tN-9EI"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -57,7 +49,6 @@
             <connections>
                 <outlet property="avatarImageView" destination="01N-8p-lUZ" id="vPT-Zu-5JO"/>
                 <outlet property="containerView" destination="Rmf-EK-2IP" id="0x0-qa-hlS"/>
-                <outlet property="gender" destination="g4o-bB-4RY" id="Vn2-8D-uyT"/>
             </connections>
             <point key="canvasLocation" x="44.274809160305338" y="73.591549295774655"/>
         </collectionViewCell>

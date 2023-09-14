@@ -11,32 +11,32 @@ import UIKit
 final class ChooseAvatarViewModel {
 
     var selectedUserInfo: UserInfor?
-    var dataUser: [UserInfor] = [
-        UserInfor(id: 1, image: UIImage(named: "image"), gender: "male"),
-        UserInfor(id: 2, image: UIImage(named: "image2"), gender: "female"),
-        UserInfor(id: 3, image: UIImage(named: "image3"), gender: "male"),
-        UserInfor(id: 4, image: UIImage(named: "image4"), gender: "female"),
-        UserInfor(id: 5, image: UIImage(named: "image5"), gender: "male"),
-        UserInfor(id: 6, image: UIImage(named: "image"), gender: "male")
+    var dataUsers: [UserInfor] =
+    [
+        UserInfor(id: 1, image: UIImage(named: "image1"), gender: Gender.male),
+        UserInfor(id: 2, image: UIImage(named: "image2"), gender: Gender.felmale),
+        UserInfor(id: 3, image: UIImage(named: "image3"), gender: Gender.male),
+        UserInfor(id: 4, image: UIImage(named: "image4"), gender: Gender.felmale),
+        UserInfor(id: 5, image: UIImage(named: "image5"), gender: Gender.male),
+        UserInfor(id: 6, image: UIImage(named: "image6"), gender:  Gender.male)
     ]
 
     func numberOfItemInSection() -> Int {
-        dataUser.count
+        dataUsers.count
     }
 
     func viewModelForChooseAvatar(at indexPath: IndexPath) -> AvatarCellViewModel {
-        let datas = dataUser[indexPath.item]
+        let datas = dataUsers[indexPath.item]
         return AvatarCellViewModel(image: datas.image)
     }
 
     func setSelectedUser(_ indexPath: IndexPath) {
-        selectedUserInfo = dataUser[indexPath.item]
+        selectedUserInfo = dataUsers[indexPath.item]
     }
 }
-
 
 struct UserInfor {
     var id: Int
     var image: UIImage?
-    var gender: String
+    var gender: Gender
 }

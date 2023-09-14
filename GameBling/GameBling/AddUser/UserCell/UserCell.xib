@@ -55,8 +55,8 @@
             <size key="customSize" width="253" height="332"/>
             <connections>
                 <outlet property="containerView" destination="fT6-fc-YAq" id="fCU-gv-xuC"/>
-                <outlet property="imageUser" destination="a3m-bF-Zqp" id="lwN-KB-raa"/>
-                <outlet property="nameLabel" destination="Q0N-Tw-xSL" id="Ohr-4D-rEE"/>
+                <outlet property="userImageVIew" destination="a3m-bF-Zqp" id="azC-yx-WDN"/>
+                <outlet property="userNameLabel" destination="Q0N-Tw-xSL" id="UyT-LJ-uka"/>
             </connections>
             <point key="canvasLocation" x="252.67175572519082" y="119.01408450704226"/>
         </collectionViewCell>

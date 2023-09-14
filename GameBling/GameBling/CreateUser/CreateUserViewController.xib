@@ -11,10 +11,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateUserViewController" customModule="GameBling" customModuleProvider="target">
             <connections>
                 <outlet property="containerContentView" destination="MTy-Pa-9iX" id="pS3-u0-xUE"/>
-                <outlet property="imageUser" destination="iKW-9d-bfa" id="75Y-fZ-guh"/>
                 <outlet property="nameTextField" destination="08E-MM-aj5" id="t8c-dQ-ORf"/>
                 <outlet property="submitButton" destination="5bK-VV-IId" id="Qpz-rl-BJ2"/>
                 <outlet property="titleLabel" destination="Yzc-DD-QEb" id="2ba-c6-fmW"/>
+                <outlet property="userImageView" destination="iKW-9d-bfa" id="Gl2-kg-epj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,7 +33,7 @@
                     <rect key="frame" x="50" y="143" width="293" height="250"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iKW-9d-bfa">
-                            <rect key="frame" x="0.0" y="0.0" width="293" height="200"/>
+                            <rect key="frame" x="10" y="10" width="273" height="190"/>
                         </imageView>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08E-MM-aj5">
                             <rect key="frame" x="80.333333333333329" y="216" width="132.33333333333337" height="34"/>
@@ -54,14 +54,14 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="iKW-9d-bfa" firstAttribute="leading" secondItem="MTy-Pa-9iX" secondAttribute="leading" id="0j7-bU-Qfh"/>
-                        <constraint firstItem="iKW-9d-bfa" firstAttribute="top" secondItem="MTy-Pa-9iX" secondAttribute="top" id="Fhc-Vs-JA3"/>
+                        <constraint firstItem="iKW-9d-bfa" firstAttribute="leading" secondItem="MTy-Pa-9iX" secondAttribute="leading" constant="10" id="0j7-bU-Qfh"/>
+                        <constraint firstItem="iKW-9d-bfa" firstAttribute="top" secondItem="MTy-Pa-9iX" secondAttribute="top" constant="10" id="Fhc-Vs-JA3"/>
                         <constraint firstAttribute="bottom" secondItem="08E-MM-aj5" secondAttribute="bottom" id="MsW-sr-Z3N"/>
                         <constraint firstItem="08E-MM-aj5" firstAttribute="centerX" secondItem="MTy-Pa-9iX" secondAttribute="centerX" id="V8K-rR-OKp"/>
                         <constraint firstAttribute="height" constant="250" id="XiC-ey-xrz"/>
                         <constraint firstItem="O8g-jF-U0d" firstAttribute="leading" secondItem="MTy-Pa-9iX" secondAttribute="leading" id="aj1-e9-BWj"/>
                         <constraint firstItem="O8g-jF-U0d" firstAttribute="top" secondItem="MTy-Pa-9iX" secondAttribute="top" id="bb9-uN-O1K"/>
-                        <constraint firstAttribute="trailing" secondItem="iKW-9d-bfa" secondAttribute="trailing" id="euB-pk-utx"/>
+                        <constraint firstAttribute="trailing" secondItem="iKW-9d-bfa" secondAttribute="trailing" constant="10" id="euB-pk-utx"/>
                         <constraint firstAttribute="trailing" secondItem="O8g-jF-U0d" secondAttribute="trailing" id="fXJ-24-gt4"/>
                         <constraint firstAttribute="bottom" secondItem="iKW-9d-bfa" secondAttribute="bottom" constant="50" id="gD0-Gw-4Po"/>
                     </constraints>

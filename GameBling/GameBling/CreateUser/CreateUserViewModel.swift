@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 final class CreateUserViewModel {
-    
+
+    var imageUser: UIImage!
+    var gender: Gender!
 }

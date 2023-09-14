@@ -10,20 +10,28 @@ import UIKit
 
 final class AddUserViewModel {
 
-    var datas: [InforPlayer] = []
+    var inforUsers: [InforPlayer] = []
+}
+
+extension AddUserViewModel {
 
     func numberOfItem() -> Int {
-        datas.count
+        inforUsers.count
     }
 
     func viewModelForUser(at indexPath: IndexPath) -> UserCellViewModel {
-        let item = datas[indexPath.item]
+        let item = inforUsers[indexPath.item]
         return UserCellViewModel(image: item.image, name: item.name, gender: "")
     }
 }
+
 struct InforPlayer {
     var name: String
     var image: UIImage
-    var gender: String
+    var gender: Gender
 }
 
+enum Gender {
+    case male
+    case felmale
+}

@@ -71,11 +71,9 @@ extension AddUserViewController: CreateUserViewControllerDelegate {
     func controller(controller: CreateUserViewController, action: CreateUserViewController.Action) {
         switch action {
         case let .inforUser(name, image, gender):
-            let user = InforPlayer(name: name, image: image, gender: gender)
-            viewModel.datas.append(user)
+            let user = InforPlayer(name: name, image: image, gender: gender )
+            viewModel.inforUsers.append(user)
             collectionView.reloadData()
         }
     }
-    
-
 }

@@ -11,8 +11,8 @@ final class UserCell: UICollectionViewCell {
 
     // MARK: PROPERTIES
     @IBOutlet private weak var containerView: UIView!
-    @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var imageUser: UIImageView!
+    @IBOutlet private weak var userNameLabel: UILabel!
+    @IBOutlet private weak var userImageVIew: UIImageView!
 
     var viewModel: UserCellViewModel? {
         didSet {
@@ -28,13 +28,13 @@ final class UserCell: UICollectionViewCell {
 
     // MARK: Private Function
     private func configureUI() {
-        imageUser.layer.cornerRadius = imageUser.frame.size.width / 5
-        imageUser.layer.borderWidth = 2
-        imageUser.layer.borderColor =  UIColor.black.cgColor
+        userImageVIew.layer.cornerRadius = userImageVIew.frame.size.width / 5
+        userImageVIew.layer.borderWidth = 2
+        userImageVIew.layer.borderColor =  UIColor.black.cgColor
     }
 
     private func updateUser() {
-        imageUser.image = viewModel?.image
-        nameLabel.text = viewModel?.name
+        userImageVIew.image = viewModel?.image
+        userNameLabel.text = viewModel?.name
     }
 }

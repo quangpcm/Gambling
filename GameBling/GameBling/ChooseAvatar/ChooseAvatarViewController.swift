@@ -11,20 +11,20 @@ protocol ChooseAvatarViewControllerDelegate: AnyObject {
 }
 
 final class ChooseAvatarViewController: UIViewController {
-    var imageU: UIImage?
-    var sex: String = ""
-    
+
     enum Action {
-        case chooseImage(image:UIImage, gender: String )
+        case chooseImage(image:UIImage, gender: Gender )
     }
     
     weak var delegate: ChooseAvatarViewControllerDelegate?
     var viewModel: ChooseAvatarViewModel = ChooseAvatarViewModel()
-    
+
+    // MARK: Properties
     @IBOutlet private weak var submitButton: UIButton!
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var titleLabel: UILabel!
-    
+
+    // MARK: lifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -38,8 +38,9 @@ final class ChooseAvatarViewController: UIViewController {
         submitButton.layer.cornerRadius = 12
         collectionView.reloadData()
     }
-    
-    @IBAction func submitButtonTouchUpInside(_ sender: Any) {
+
+    // MARK: IBAction
+    @IBAction private func submitButtonTouchUpInside(_ sender: Any) {
         if let selectedUserInfo = viewModel.selectedUserInfo, let image = selectedUserInfo.image {
             delegate?.controller(self, action: .chooseImage(image: image, gender: selectedUserInfo.gender))
             navigationController?.popViewController(animated: true)
@@ -67,6 +68,7 @@ extension ChooseAvatarViewController: UICollectionViewDataSource {
 
 //MARK: UICollectionViewDelegateFlowLayout
 extension ChooseAvatarViewController: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 120, height: 100)
     }
