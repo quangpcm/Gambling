@@ -9,15 +9,14 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-        var window: UIWindow?
+    var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let home = HomeViewController()
-        let navi = UINavigationController(rootViewController: home)
-        window?.rootViewController = navi
+        let addVC = AddUserViewController()
+        let naviRoot = UINavigationController(rootViewController: addVC)
+        window?.rootViewController = naviRoot
         window?.makeKeyAndVisible()
-            return true
+        return true
     }
 }
 
