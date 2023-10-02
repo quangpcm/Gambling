@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 protocol ChooseAvatarViewControllerDelegate: AnyObject {
     func controller(_ controller: ChooseAvatarViewController, action: ChooseAvatarViewController.Action)
 }

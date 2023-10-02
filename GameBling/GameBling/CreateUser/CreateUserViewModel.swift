@@ -10,6 +10,6 @@ import UIKit
 
 final class CreateUserViewModel {
 
-    var imageUser: UIImage!
+    var userImage: UIImage!
     var gender: Gender!
 }

@@ -64,7 +64,7 @@ final class CreateUserViewController: UIViewController, UITextFieldDelegate  {
         guard let name = nameTextField.text else { return }
         guard !name.isEmpty else { return  }
         submitButton.isEnabled = true
-        delegate?.controller(controller: self, action: .inforUser(name: nameTextField.text ?? "", image: viewModel.imageUser, gender: viewModel.gender))
+        delegate?.controller(controller: self, action: .inforUser(name: nameTextField.text ?? "", image: viewModel.userImage, gender: viewModel.gender))
         navigationController?.popViewController(animated: true)
     }
 }
@@ -73,10 +73,10 @@ final class CreateUserViewController: UIViewController, UITextFieldDelegate  {
 extension CreateUserViewController: ChooseAvatarViewControllerDelegate {
     func controller(_ controller: ChooseAvatarViewController, action: ChooseAvatarViewController.Action) {
         switch action {
-        case let .chooseImage(image, sex):
+        case let .chooseImage(image, gender):
             userImageView.image = image
-            viewModel.imageUser = image
-            viewModel.gender = sex
+            viewModel.userImage = image
+            viewModel.gender = gender
         }
     }
 }

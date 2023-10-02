@@ -19,19 +19,15 @@ extension AddUserViewModel {
         inforUsers.count
     }
 
-    func viewModelForUser(at indexPath: IndexPath) -> UserCellViewModel {
+    func viewModelForUser(at indexPath: IndexPath) -> UserCellViewModel? {
+        guard indexPath.item < inforUsers.count else { return nil  }
         let item = inforUsers[indexPath.item]
-        return UserCellViewModel(image: item.image, name: item.name, gender: "")
+            return UserCellViewModel(image: item.image, name: item.name, gender: "")
+        }
     }
-}
 
 struct InforPlayer {
     var name: String
     var image: UIImage
     var gender: Gender
-}
-
-enum Gender {
-    case male
-    case felmale
 }
